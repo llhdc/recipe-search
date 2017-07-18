@@ -1,4 +1,4 @@
-let url = 'https://crossorigin.me/http://www.recipepuppy.com/api?q=search-term'
+let url = 'https://crossorigin.me/http://www.recipepuppy.com/api?q='
 
 fetch(url).then(
   function(response) {
@@ -7,12 +7,12 @@ fetch(url).then(
           return;
     }
     response.json().then(function(data) {
-      let searchInput = document.getElementById('search').value;
+      let searchForm = document.getElementById('search');
 
-      document.querySelector('form.search').addEventListener('submit', function(dontSubmit) {
+      document.querySelector('form.search').addEventListener('submit', function(e) {
         //prevent the normal submission of the form
-        dontSubmit.preventDefault();
-        console.log(searchInput);
+        e.preventDefault();
+        console.log(searchForm.value);
       });
     });
   }
