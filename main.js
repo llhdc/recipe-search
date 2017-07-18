@@ -7,8 +7,13 @@ fetch(url).then(
           return;
     }
     response.json().then(function(data) {
+      let searchInput = document.getElementById('search').value;
 
-
+      document.querySelector('form.search').addEventListener('submit', function(dontSubmit) {
+        //prevent the normal submission of the form
+        dontSubmit.preventDefault();
+        console.log(searchInput);
+      });
     });
   }
 )
