@@ -1,0 +1,46 @@
+html {
+
+
+}
+
+.wrapper {
+  height: 25em;
+  margin: auto;
+  margin-top: 40px;
+  width: 750px;
+};
+
+header {
+  border-bottom: 3px solid black;
+
+}
+
+img {
+  width: 30vh;
+  height: 30vh;
+  margin: 10px 10px;
+  border: 1px solid black;
+}
+
+input {
+  width: 165px;
+  height: 20px;
+  margin-bottom: 25px;
+}
+
+main {
+  border-top: 1px solid black;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  padding-top: 25px;  
+
+}
+
+p {
+  color: red;
+}
+
+.search {
+  border-bottom: 1px solid black;
+}
