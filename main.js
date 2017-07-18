@@ -7,11 +7,7 @@ fetch(url).then(
           return;
     }
     response.json().then(function(data) {
-      let mainContent = `
 
-          `;
-
-      container.innerHTML = mainContent;
 
     });
   }
