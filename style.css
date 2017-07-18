@@ -20,6 +20,7 @@ img {
   height: 30vh;
   margin: 10px 10px;
   border: 1px solid black;
+  flex-basis: 22%;
 }
 
 input {
@@ -33,7 +34,7 @@ main {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
-  padding-top: 25px;  
+  padding-top: 25px;
 
 }
 
