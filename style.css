@@ -1,6 +1,5 @@
 html {
-
-
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -15,12 +14,18 @@ header {
 
 }
 
-img {
-  width: 30vh;
-  height: 30vh;
+section {
+  width: 150px;
+  height: 175px;
   margin: 10px 10px;
   border: 1px solid black;
   flex-basis: 22%;
+  display: flex;
+  flex-flow: column;
+}
+
+img {
+  justify-content: center;
 }
 
 input {
@@ -38,8 +43,10 @@ main {
 
 }
 
-p {
-  color: red;
+a {
+  color: black;
+  text-decoration-color: red;
+  font-size: 15px;
 }
 
 .search {
