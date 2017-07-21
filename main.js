@@ -21,7 +21,7 @@ document.querySelector('form.search').addEventListener('submit', function(e) {
             let recipeContainer = ''
             data.results.forEach(function(result) {
               if (result.thumbnail === '') {
-                result.img = ''
+                result.thumbnail = 'http://via.placeholder.com/165x80'
               };
               let template =
               `<section>
