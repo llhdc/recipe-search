@@ -17,12 +17,15 @@ document.querySelector('form.search').addEventListener('submit', function(e) {
             return;
           }
           response.json().then(function(data) {
-            console.log(data);
+    // Declare variable for recipe template container
             let recipeContainer = ''
+    // Iterate over data set and manipulate each data result
             data.results.forEach(function(result) {
+    // Check if result.thumbnail contains an img url and enter placeholder if not
               if (result.thumbnail === '') {
                 result.thumbnail = 'http://via.placeholder.com/165x80'
               };
+    // Define template to use with data and enter into discrete container
               let template =
               `<section>
                 <a href='${result.href}'><p>${result.title}</p></a>
@@ -30,9 +33,10 @@ document.querySelector('form.search').addEventListener('submit', function(e) {
                </section>
               `
               ;
+    // For each data template, insert via concatenation to recipeContainer
               recipeContainer += template;
-              console.log(recipeContainer);
             });
+    // After each for each method executes insert template container into HTML.
             main.innerHTML = recipeContainer;
 
       });
