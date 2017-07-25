@@ -40,13 +40,13 @@ main {
   flex-flow: wrap row;
   justify-content: space-around;
   padding-top: 25px;
-
 }
 
 a {
   color: black;
   text-decoration-color: red;
   font-size: 15px;
+  text-align: center;
 }
 
 .search {
